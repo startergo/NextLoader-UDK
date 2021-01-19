@@ -77,7 +77,7 @@ $ brew upgrade qemu
 ## Prepare the Bespoke TianoCore EDK II (UDK2018) Environment
 ### Fork the NextLoader-UDK Repository
 
-Navigate to `https://github.com/dakanji/NextLoader-UDK` and fork the repository
+Navigate to `https://github.com/startergo/NextLoader-UDK` and fork the repository
 
 ### Clone the Forked NextLoader-UDK Repository
 In Terminal, create a `NextLoader` folder under your `Documents` folder, `cd` to that directory and clone the "NextLoader Ready" TianoCore EDK II (UDK2018) repository into an `edk2` folder:
