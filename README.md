@@ -1,6 +1,6 @@
-# Refind-UDK
+# NextLoader-UDK
 ## Overview
-UDK2018 Environment for Building the RefindPlus Boot Manager.
+UDK2018 Environment for Building the NextLoader Boot Manager.
 
 Build instructions:
 # Building NextLoader on Mac OS
