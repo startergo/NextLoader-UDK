@@ -87,7 +87,7 @@ $ mkdir ~/Documents/NextLoader
 $ cd ~/Documents/NextLoader
 $ git clone https://github.com/YOUR_GITHUB_USERNAME/NextLoader-UDK.git edk2
 $ cd ~/Documents/NextLoader/edk2
-$ git checkout rudk
+$ git checkout main
 $ git remote add upstream https://github.com/startergo/NextLoader-UDK.git
 ```
 
@@ -145,8 +145,8 @@ In Terminal, run the following commands:
 
 ```
 $ cd ~/Documents/NextLoader/edk2
-$ git checkout rudk
-$ git pull upstream rudk
+$ git checkout main
+$ git pull upstream main
 $ git push
 ```
 
