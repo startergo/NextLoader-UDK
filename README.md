@@ -75,7 +75,7 @@ $ brew upgrade qemu
 ```
 
 ## Prepare the Bespoke TianoCore EDK II (UDK2018) Environment
-### Fork the Refind-UDK Repository
+### Fork the NextLoader-UDK Repository
 
 Navigate to `https://github.com/dakanji/Refind-UDK` and fork the repository
 
