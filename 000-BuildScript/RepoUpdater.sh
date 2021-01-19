@@ -37,7 +37,7 @@ runErr() { # $1: message
 trap runErr ERR
 
 
-## UPDATE RUDK BRANCH ##
+## UPDATE MAIN BRANCH ##
 clear
 msg_info '## RepoUpdater ##'
 msg_info '-----------------'
@@ -47,10 +47,10 @@ BASE_DIR="${HOME}/Documents/NextLoader/edk2"
 # shellcheck disable=SC1090
 source "${BASE_DIR}/000-BuildScript/RepoUpdateSHA.txt"
 pushd ${BASE_DIR} > /dev/null || runErr "ERROR: Could not find ${BASE_DIR} ...Exiting"
-git checkout rudk
+git checkout main
 git reset --hard "${NEXTLOADER_UDK_SHA}"
 git push origin HEAD -f
-git pull --tags upstream rudk
+git pull --tags upstream main
 git push origin
 git push --tags origin
 popd > /dev/null || runErr "ERROR: Could not return to starting directory ...Exiting"
