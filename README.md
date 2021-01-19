@@ -4,7 +4,7 @@ UDK2018 Environment for Building the NextLoader Boot Manager.
 
 Build instructions:
 # Building NextLoader on Mac OS
-These are step-by-step instructions for setting up a bespoke Tianocore EDK II build environment for buidling RefindPlus on Mac OS.
+These are step-by-step instructions for setting up a bespoke Tianocore EDK II build environment for buidling NextLoader on Mac OS.
 
 These steps have been verified on Mac OS v10.12 (Sierra) and Mac OS v10.14 (Mojave) and should also work on Mac OS v10.13 (High Sierra) and Mac OS v10.15 (Catalina).
 
@@ -77,7 +77,7 @@ $ brew upgrade qemu
 ## Prepare the Bespoke TianoCore EDK II (UDK2018) Environment
 ### Fork the NextLoader-UDK Repository
 
-Navigate to `https://github.com/dakanji/Refind-UDK` and fork the repository
+Navigate to `https://github.com/dakanji/NextLoader-UDK` and fork the repository
 
 ### Clone the Forked NextLoader-UDK Repository
 In Terminal, create a `NextLoader` folder under your `Documents` folder, `cd` to that directory and clone the "NextLoader Ready" TianoCore EDK II (UDK2018) repository into an `edk2` folder:
@@ -122,7 +122,7 @@ $ git remote add upstream https://github.com/startergo/next-loader/tree/NextLoad
 
 **NB:** Replace `YOUR_GITHUB_USERNAME` above with your actual GitHub User Name.
 
-Your local `RefindPlus` repository will be under `Documents/NextLoader/Working`
+Your local `NextLoader` repository will be under `Documents/NextLoader/Working`
 
 
 ## Build NextLoader
@@ -150,7 +150,8 @@ $ git pull upstream rudk
 $ git push
 ```
 
-#### RefindPlus
+#### NextLoader
+
 In Terminal, run the following commands:
 
 ```
