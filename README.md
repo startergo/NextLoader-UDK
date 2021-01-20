@@ -156,7 +156,7 @@ In Terminal, run the following commands:
 
 ```
 $ cd ~/Documents/NextLoader/Working
-$ git checkout NextLoader
-$ git pull upstream NextLoader
+$ git checkout master
+$ git pull origin master
 $ git push
 ```
