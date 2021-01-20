@@ -42,7 +42,7 @@ clear
 msg_info '## NextloaderBuilder - Setting Up ##'
 msg_info '------------------------------------'
 sleep 2
-EDIT_BRANCH="${1:-NextLoader}"
+EDIT_BRANCH="${1:-master}"
 BASE_DIR="${HOME}/Documents/NextLoader"
 WORK_DIR="${BASE_DIR}/Working"
 EDK2_DIR="${BASE_DIR}/edk2"
