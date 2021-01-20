@@ -106,7 +106,7 @@ $ make -C BaseTools/Source/C
 ## Prepare the NextLoader Environment
 ### Fork the NextLoader Repository
 
-Navigate to `https://github.com/startergo/next-loader/tree/NextLoader/src/efi` and fork the repository
+Navigate to `https://github.com/startergo/NextLoader` and fork the repository
 
 ### Clone the Forked NextLoader Repository
 
@@ -117,7 +117,7 @@ $ cd ~/Documents/NextLoader
 $ git clone https://github.com/YOUR_GITHUB_USERNAME/NextLoader.git Working
 $ cd ~/Documents/NextLoader/Working
 $ git checkout NextLoader
-$ git remote add upstream https://github.com/startergo/next-loader/tree/NextLoader/src/efi.git
+$ git remote add upstream https://github.com/startergo/NextLoader.git
 ```
 
 **NB:** Replace `YOUR_GITHUB_USERNAME` above with your actual GitHub User Name.
