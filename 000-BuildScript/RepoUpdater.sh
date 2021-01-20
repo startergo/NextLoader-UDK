@@ -60,14 +60,14 @@ echo ''
 echo ''
 
 
-## UPDATE GOPFIX BRANCH ##
-msg_base "Syncing RefindPlus"
+## UPDATE NextLoader BRANCH ##
+msg_base "Syncing NextLoader"
 BASE_DIR="${HOME}/Documents/RefindPlus/Working"
 pushd ${BASE_DIR} > /dev/null || runErr "ERROR: Could not find ${BASE_DIR} ...Exiting"
 git checkout GOPFix
-git reset --hard "${next-loader_SHA}"
+git reset --hard "${NEXTLOADER_SHA}"
 git push origin HEAD -f
-git pull --tags upstream next-loader
+git pull --tags upstream NextLoader
 git push origin
 git push --tags origin
 popd > /dev/null || exit 1
