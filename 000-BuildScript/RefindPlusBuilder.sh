@@ -42,7 +42,7 @@ clear
 msg_info '## NextloaderBuilder - Setting Up ##'
 msg_info '------------------------------------'
 sleep 2
-EDIT_BRANCH="${1:-next-loader}"
+EDIT_BRANCH="${1:-NextLoader}"
 BASE_DIR="${HOME}/Documents/NextLoader"
 WORK_DIR="${BASE_DIR}/Working"
 EDK2_DIR="${BASE_DIR}/edk2"
@@ -68,7 +68,7 @@ sleep 2
 msg_info "Update NextLoaderPkg..."
 
 # Remove later #
-rm -fr "${EDK2_DIR}/RefindPkg"
+rm -fr "${EDK2_DIR}/NextLoaderPkg"
 # Remove later #
 
 rm -fr "${EDK2_DIR}/NextLoaderPkg"
