@@ -56,9 +56,9 @@ XCODE_DIR_DBG="${EDK2_DIR}/Build/NextLoader/DEBUG_XCODE5"
 XCODE_DIR_TMP="${EDK2_DIR}/.Build-TMP/NextLoader/RELEASE_XCODE5"
 BINARY_DIR="${XCODE_DIR_REL}/X64"
 OUTPUT_DIR="${EDK2_DIR}/000-BOOTx64-Files"
-GLOBAL_FILE="${EDK2_DIR}/NextLoaderPkg/MainRP/globalExtra.h"
-GLOBAL_FILE_TMP_REL="${EDK2_DIR}/NextLoaderPkg/MainRP/globalExtra-REL.txt"
-GLOBAL_FILE_TMP_DBG="${EDK2_DIR}/NextLoaderPkg/MainRP/globalExtra-DBG.txt"
+GLOBAL_FILE="${EDK2_DIR}/NextLoaderPkg/EfiLib/globalExtra.h"
+GLOBAL_FILE_TMP_REL="${EDK2_DIR}/NextLoaderPkg/EfiLib/globalExtra-REL.txt"
+GLOBAL_FILE_TMP_DBG="${EDK2_DIR}/NextLoaderPkg/EfiLib/globalExtra-DBG.txt"
 
 pushd ${WORK_DIR} > /dev/null || exit 1
 msg_base "Checkout '${EDIT_BRANCH}' branch..."
