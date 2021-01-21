@@ -42,7 +42,7 @@ clear
 msg_info '## rEFIndBuilder - Setting Up ##'
 msg_info '------------------------------------'
 sleep 2
-EDIT_BRANCH="${1:-master}"
+EDIT_BRANCH="${1:-main}"
 BASE_DIR="${HOME}/Documents/rEFInd"
 WORK_DIR="${BASE_DIR}/Working"
 EDK2_DIR="${BASE_DIR}/edk2"
