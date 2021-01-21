@@ -2,7 +2,7 @@
 
 ###
  # RepoUpdater.sh
- # A script to sync the NextLoader and NextLoader-UDK Repos with upstream
+ # A script to sync the Refind and NextLoader-UDK Repos with upstream
  #
  # Copyright (c) 2020-2021 Dayo Akanji
  # MIT License
@@ -43,7 +43,7 @@ msg_info '## RepoUpdater ##'
 msg_info '-----------------'
 echo ''
 msg_base "Syncing NextLoader-UDK"
-BASE_DIR="${HOME}/Documents/NextLoader/edk2"
+BASE_DIR="${HOME}/Documents/rEFInd/edk2"
 # shellcheck disable=SC1090
 source "${BASE_DIR}/000-BuildScript/RepoUpdateSHA.txt"
 pushd ${BASE_DIR} > /dev/null || runErr "ERROR: Could not find ${BASE_DIR} ...Exiting"
@@ -61,18 +61,18 @@ echo ''
 
 
 ## UPDATE NextLoader BRANCH ##
-msg_base "Syncing NextLoader"
-BASE_DIR="${HOME}/Documents/NextLoader/Working"
+msg_base "Syncing rEFInd"
+BASE_DIR="${HOME}/Documents/rEFInd/Working"
 pushd ${BASE_DIR} > /dev/null || runErr "ERROR: Could not find ${BASE_DIR} ...Exiting"
 git checkout master
-git reset --hard "${NEXTLOADER_SHA}"
+git reset --hard "${REFIND_SHA}"
 git push origin HEAD -f
-git pull --tags upstream NextLoader
+git pull --tags upstream rEFInd
 git push origin
 git push --tags origin
 popd > /dev/null || exit 1
 echo ''
-msg_status "Synced NextLoader"
+msg_status "Synced rEFInd"
 echo ''
 msg_info '-----------------'
 msg_info '## RepoUpdater ##'
