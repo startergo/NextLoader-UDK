@@ -129,7 +129,7 @@ cp "${GLOBAL_FILE_TMP_REL}" "${GLOBAL_FILE}"
 source edksetup.sh BaseTools
 build
 if [ -d "${EDK2_DIR}/Build" ] ; then
-    cp "${BINARY_DIR}/Loader.efi" "${OUTPUT_DIR}/BOOTx64-REL.efi"
+    cp "${BINARY_DIR}/rEFInd.efi" "${OUTPUT_DIR}/BOOTx64-REL.efi"
     mv "${EDK2_DIR}/Build" "${EDK2_DIR}/.Build-TMP"
 fi
 popd > /dev/null || exit 1
@@ -154,7 +154,7 @@ cp "${GLOBAL_FILE_TMP_DBG}" "${GLOBAL_FILE}"
 source edksetup.sh BaseTools
 build
 if [ -d "${EDK2_DIR}/Build" ] ; then
-    cp "${BINARY_DIR}/loader.efi" "${OUTPUT_DIR}/BOOTx64-DBG.efi"
+    cp "${BINARY_DIR}/rEFInd.efi" "${OUTPUT_DIR}/BOOTx64-DBG.efi"
     mv "${XCODE_DIR_REL}" "${XCODE_DIR_DBG}"
     mv "${XCODE_DIR_TMP}" "${XCODE_DIR_REL}"
 fi
